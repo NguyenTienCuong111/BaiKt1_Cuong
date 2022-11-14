@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="404dp"
+        android:layout_height="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_singer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mono" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/img_singer"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_nghedanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_name"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="-74dp"
+            android:layout_toEndOf="@+id/img_singer"
+            android:text="Nghệ Danh"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_quocgia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_nghedanh"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="152dp"
+            android:layout_marginBottom="-54dp"
+            android:layout_toEndOf="@+id/img_singer"
+            android:text="Quốc Gia"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_sosao"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="260dp"
+            android:layout_marginEnd="-38dp"
+            android:layout_marginBottom="-54dp"
+            android:layout_toEndOf="@+id/img_singer"
+            android:text="Số sao"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
